@@ -1,0 +1,50 @@
+.flex {
+    display:flex;
+/*     justify-content: space-between; */
+   
+}
+
+
+#container {
+    width:1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+#catsFirstLetterBreed {
+    width: 250px;
+}
+
+
+
+#cat_pcs {
+    margin-left: 0px;
+    
+}
+
+
+#catsListContainer {
+    display:flex;
+
+}
+
+.contaier-parameters {
+    align-items: center;
+  
+
+}
+
+
+#catRandom_switch {
+    margin-left: 25px;
+}
+
+
+#catsListContainer {
+    margin-top: 25px;
+}
+
+#catsDetails {
+    margin-left: 25px;
+}

@@ -1,3 +1,4 @@
+
 const catsFirstLetterBreed_selector = document.querySelector('#catsFirstLetterBreed');
 const catRandom_switcher = document.querySelector('#catRandom_switcher');
 const quantityCats = document.querySelector('#catResponse_input');
@@ -64,13 +65,6 @@ async function click_response() {
     .then (function(resp) {return resp.data})
     .catch(function (error) {alert(error)});    
 
-   
-
-    // (response => response.json());
-   
-    // catsResponse = catsResponse.data;
-    // .catch(console.log('Не сработало'));
-    // console.log(catsResponse);
     console.log(catsFirstLetterBreed_selector.value);
 
     let catsResponse_changed = catsResponse;
@@ -139,3 +133,7 @@ async function click_response() {
       });
 
 };
+
+
+
+

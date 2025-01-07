@@ -19,7 +19,6 @@ catsFirstLetterBreed_arr.forEach ((ltr) => {
     catsFirstLetterBreed.append(new_select);
 });
 
-
 // функция перемешивания названия пород
   // генератор массива случайных чисел
 function randomiser_arr(min, max, arr) {
@@ -57,9 +56,6 @@ async function click_response() {
     if (catsFirstLetterBreed_selector.value === 'Выберите первую букву названия породы')
       {catsFirstLetterBreed_selector.value = ''};
    
-    // запрос на сервер. Сначала запрашивал конкретное количество, потом сделал так, что бы запрашивал все породы для последующих манипуляций, потому что не нашел параметры для запроса только количество.
-    // let catsResponse = await fetch(`https://catfact.ninja/breeds?limit=${quantityCats}`)
-    
     let catsResponse = await fetch('https://catfact.ninja/breeds?limit=98')
     .then(function (resp) {return resp.json()})
     .then (function(resp) {return resp.data})
@@ -72,7 +68,6 @@ async function click_response() {
     // активирует функцию перемешивания
     if (catRandom_switcher.checked)
       {catsResponse_changed = randomiser_arr(0, catsResponse_changed.length, catsResponse_changed)};
-
 
     // фильтрует породы по первой букве названия
     catsResponse_changed  = catsResponse_changed.filter(function(catObj) {

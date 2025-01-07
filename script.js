@@ -56,7 +56,7 @@ async function click_response() {
 
     if (catsFirstLetterBreed_selector.value === 'Выберите первую букву названия породы')
       {catsFirstLetterBreed_selector.value = ''};
-
+   
     // запрос на сервер. Сначала запрашивал конкретное количество, потом сделал так, что бы запрашивал все породы для последующих манипуляций, потому что не нашел параметры для запроса только количество.
     // let catsResponse = await fetch(`https://catfact.ninja/breeds?limit=${quantityCats}`)
     
